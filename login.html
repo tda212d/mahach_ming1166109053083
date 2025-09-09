@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เข้าสู่ระบบ /ลงทะเบียน</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #b3d9ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-box {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        select, input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            background-color: #bcbebd;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #d9dfd9;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-box">
+    <h2>เข้าสู่ระบบ</h2>
+    <form>
+        <label for="loginType">เลือกประเภท</label>
+        <select id="loginType" name="loginType" >
+            <option value="">เลือกประเภท</option>
+            <option value="1">ผู้ประกอบการ</option>
+            <option value="2" selected>ผู้สมัครงาน</option>
+        </select>
+
+        <label for="idcard">เลขบัตรประชาชน</label>
+        <input type="text" id="idcard" name="idcard" >
+
+        <label for="password">รหัสผ่าน</label>
+        <input type="password" id="password" name="password" >
+
+        <form action="main.html" method="post">
+          <button type="submit">
+            เข้าสู่ระบบ
+          </button>
+        </form>
+        หากท่านไม่สมัครสมาชิก
+        <form action="grew.html" method="post">
+          <button type="submit">
+            สมัครสมาชิก
+          </button>
+          
+       
+
+      
+</div>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>บริการจัดหางาน</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0077cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #005fa3;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 600px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .profile-info p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        .edit-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .edit-btn:hover {
+            background-color: #005fa3;
+        }
+        footer {
+            background-color: #e0e0e0;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>บริการจัดหางาน</h1>
+    </header>
+
+    <nav>
+        Home</a>
+        ข้อมูลส่วนตัว</a>
+        ข้อมูลการประเมินการ</a>
+        ประวัติการฝึกอบรม</a>
+    </nav>
+
+    <div class="container">
+        <div class="profile-info">
+            <p>เลขบัตรประชาชน: 0641356421</p>
+            <p>ชื่อ: สรวิชญ์</p>
+            <p>นามสกุล: โครตอินทร์</p>
+            <p>โทร: 0641356421</p>
+            <p>อายุ: 21</p>
+        </div>
+        <form action="fomr.html" method="post">
+            
+        
+            <button type="submit">แก้ไขข้อมูล</button>
+        </form>
+    </div>
+
+    <footer>
+        บริการจัดหางาน คณะวิทยาการคอมพิวเตอร์ มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี<br>
+        แจ้งปัญหาการใช้งานระบบหรือมีข้อสงสัยกรุณาติดต่อเจ้าหน้าที่ โทร 081-234-5678
+    </footer>
+
+    <script>
+        function editProfile() {
+            alert("กำลังเข้าสู่หน้าการแก้ไขข้อมูล...");
+            // หรือเปลี่ยนไปหน้าแก้ไขข้อมูลจริง:
+            // window.location.href = "edit-profile.html";
+        }
+    </script>
+
+</body>
+</html>

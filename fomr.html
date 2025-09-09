@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครสมาชิก</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #b3d9ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .form-container {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 10px;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1976D2;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>สมัครสมาชิก</h2>
+    <form>
+        <label for="idcard">เลขบัตรประชาชน *</label>
+        <input type="text" id="idcard" name="idcard" required>
+
+        <label for="prefix">คำนำหน้า</label>
+        <select id="prefix" name="prefix">
+            <option value="">-- เลือก --</option>
+            <option value="mr">นาย</option>
+            <option value="mrs">นาง</option>
+            <option value="ms">นางสาว</option>
+        </select>
+
+        <label for="firstname">ชื่อ</label>
+        <input type="text" id="firstname" name="firstname" required>
+
+        <label for="lastname">นามสกุล</label>
+        <input type="text" id="lastname" name="lastname" required>
+
+        <label for="birthdate">วัน/เดือน/ปีเกิด</label>
+        <input type="date" id="birthdate" name="birthdate" required>
+
+        <label for="age">อายุ</label>
+        <input type="number" id="age" name="age" min="0">
+
+        <label for="gender">เพศ</label>
+        <select id="gender" name="gender" required>
+            <option value="">-- เลือก --</option>
+            <option value="male">ชาย</option>
+            <option value="female">หญิง</option>
+            <option value="other">อื่นๆ</option>
+        </select>
+
+        <label for="address">ที่อยู่</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+
+        <label for="zipcode">รหัสไปรษณีย์</label>
+        <input type="text" id="zipcode" name="zipcode" required>
+
+        <label for="phone">เบอร์โทรศัพท์</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="email">อีเมล</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="registerdate">วัน/เดือน/ปีที่สมัคร</label>
+        <input type="date" id="registerdate" name="registerdate">
+
+        <button type="submit">สมัครสมาชิก</button>
+    </form>
+</div>
+
+</body>
+</html>
